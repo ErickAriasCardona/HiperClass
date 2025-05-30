@@ -47,7 +47,7 @@ function App() {
 
       setResultado({
         prediccion: data.prediccion,
-        control: data.control,
+        control: data.control, 
       });
 
     } catch (error) {
