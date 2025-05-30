@@ -76,3 +76,8 @@ def predecir(data: DatosPaciente):
         "prediccion": pred,
         "control": control_msg
     }
+
+
+@app.get("/")
+def root():
+    return {"mensaje": "API en Railway funcionando ✅"}
