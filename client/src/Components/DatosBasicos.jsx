@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './FormStyles.css';
-import LogoHC from '../assets/logo.png';
+import LogoHC from '../assets/logo/logo.png';
 
 
 export default function DatosBasicos({ onNext }) {
