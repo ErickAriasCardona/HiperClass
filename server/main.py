@@ -5,10 +5,10 @@ import pickle
 from fastapi.middleware.cors import CORSMiddleware
 
 # Cargar modelo y columnas
-with open("C:/Users/MI PC/Desktop/ModeloAI_HiperClass/server/modelo_entrenado.pkl", "rb") as f:
+with open("modelo_entrenado.pkl", "rb") as f:
     model = pickle.load(f)
 
-with open("C:/Users/MI PC/Desktop/ModeloAI_HiperClass/server/columnas_modelo.pkl", "rb") as f:
+with open("columnas_modelo.pkl", "rb") as f:
     columnas_modelo = pickle.load(f)
 
 # Crear app

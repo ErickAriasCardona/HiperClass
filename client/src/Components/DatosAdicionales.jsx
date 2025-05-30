@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './FormStyles.css';
+import LogoHC from '../Assets/Logo-HC.png';
 
 const opciones = {
     sexo: ['F', 'M'],
@@ -32,7 +33,7 @@ export default function DatosAdicionales({ onPredict }) {
             <div className="left-panel">
                 <h1>HyperClass</h1>
                 <p>Hypertension Classifier</p>
-                <div className="logo">🤖</div>
+                <img className='logo' src={LogoHC} alt="" />
             </div>
             <div className="right-panel">
                 <h3>Selecciona la respuesta</h3>

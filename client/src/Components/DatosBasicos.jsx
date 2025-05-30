@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './FormStyles.css';
+import LogoHC from '../Assets/Logo-HC.png';
+
 
 export default function DatosBasicos({ onNext }) {
   const [datos, setDatos] = useState({
@@ -24,7 +26,8 @@ export default function DatosBasicos({ onNext }) {
       <div className="left-panel">
         <h1>HyperClass</h1>
         <p>Hypertension Classifier</p>
-        <div className="logo">🤖</div>
+        <img className='logo' src={LogoHC} alt="" />
+
       </div>
       <div className="right-panel">
         <p>Este asistente usa inteligencia artificial para predecir tu posible tipo de hipertensión a partir de tus datos. <br /><strong>Es una guía orientativa, no un diagnóstico médico.</strong></p>
