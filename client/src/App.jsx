@@ -36,7 +36,7 @@ function App() {
     };
 
     try {
-      const response = await fetch('http://localhost:8000/predecir', {
+      const response = await fetch('https://hiperclass-production.up.railway.app/predecir', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(datosFinales),
