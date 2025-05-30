@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './FormStyles.css';
-import LogoHC from '../Assets/Logo.png';
+import LogoHC from '../assets/logo.png';
 
 const opciones = {
     sexo: ['F', 'M'],
