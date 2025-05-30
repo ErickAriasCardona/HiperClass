@@ -16,7 +16,7 @@ app = FastAPI()
 
 # Configurar CORS para permitir peticiones desde frontend
 origins = [
-    "https://hiper-class-2mhq.vercel.app/",
+    "https://hiper-class-2mhq.vercel.app",
 ]
 
 app.add_middleware(
