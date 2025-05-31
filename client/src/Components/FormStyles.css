@@ -2,7 +2,7 @@
   display: flex;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   font-family: 'Arial', sans-serif;
   width: 800px;
   height: auto;
@@ -23,11 +23,15 @@
 
 .left-panel h1 {
   font-size: 32px;
+  width: auto;
+  height: auto;
   margin-bottom: 10px;
   margin-top: 5rem;
 }
 
 .left-panel p {
+  width: auto;
+  height: auto;
   font-size: 14px;
 }
 
@@ -42,10 +46,13 @@
   background-color: #d2ebfd;
   width: 65%;
   padding: 30px;
+  height: auto;
 }
 
 .right-panel h3 {
   text-align: center;
+  width: auto;
+  height: auto;
   margin-bottom: 20px;
 }
 
@@ -60,6 +67,8 @@
 .input-group label {
   margin-right: 10px;
   font-weight: bold;
+  width: auto;
+  height: auto;
 }
 
 .input-group input {
@@ -80,10 +89,12 @@
 
 .radio-group label {
   font-weight: bold;
+  width: auto;
+  height: auto;
   margin-right: 10px;
 }
 
-.radio-options{
+.radio-options {
   display: flex;
   justify-content: center;
   width: auto;
@@ -97,16 +108,22 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  width: auto;
+  height: auto;
   background-color: #a3cdf7;
 }
 
 .radio-options .active {
   background-color: #1e8fe1;
   color: white;
+  width: auto;
+  height: auto;
 }
 
 .button-container {
   text-align: center;
+  width: auto;
+  height: auto;
 }
 
 button.primary {
@@ -117,6 +134,8 @@ button.primary {
   color: white;
   font-weight: bold;
   cursor: pointer;
+  width: auto;
+  height: auto;
 }
 
 .modal-overlay {
@@ -141,12 +160,14 @@ button.primary {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   animation: aparecer 0.3s ease-in-out;
   color: #1e8fe1;
+  width: auto;
+  height: auto;
 }
 
 
 .modal-content>h2 {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 @keyframes aparecer {
@@ -154,6 +175,7 @@ button.primary {
     opacity: 0;
     transform: scale(0.8);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -163,15 +185,21 @@ button.primary {
 @media (max-width: 600px) {
   .form-container {
     flex-direction: column;
-    width: 90%;
-    margin: 20px auto;
+    width: 100%;
+    height: 100vh;
+    margin: 0px auto;
     height: auto;
+    overflow: scroll;
+    align-items: center;
+    border-radius: 0;
+
   }
 
   .left-panel,
   .right-panel {
-    width: 100%;
-    padding: 20px;
+    width: 98%;
+    padding: 1%;
+    align-items: center;
   }
 
   .left-panel h1 {
@@ -186,7 +214,7 @@ button.primary {
 
   .input-group {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .input-group label {
@@ -194,12 +222,13 @@ button.primary {
   }
 
   .input-group input {
-    width: 100%;
+    width: 30%;
   }
 
   .radio-group {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+
   }
 
   .radio-options {
@@ -215,5 +244,16 @@ button.primary {
     width: 100%;
     padding: 12px 0;
     font-size: 16px;
+    margin-top: 1rem;
+  }
+
+ 
+  .right-panel>p{
+    width: 90%;
+    height: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 1.2rem;
+    align-items: center;
   }
 }
